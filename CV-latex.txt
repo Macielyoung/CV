@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Wenyan Yang} % Your name
+\address{Soochow University, Suzhou City} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{18896554955 \\ ywy940215@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Soochow University} \hfill {\em Sep 2016 - Jun 2019} 
+\\ Master in Computer Science and Technology
+
+{\bf Soochow University} \hfill {\em Sep 2012 - Jun 2016} 
+\\ Bachelor in Computer Science and Technology 
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Project Experience}
+
+\begin{rSubsection}{Face and Speech Recognition}{Sep 2016 - Nov 2016}{}{}
+\item Tools \& Environment : Python and NAO robot
+\item Using the open source face recognition framework -- openface, and collecting some user face data, we employ the NAO robot to identify the human face.
+\item Enable NAO make a simple conversation with speech recognition framework of Iflytek.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Customer Segmentation and Prediction}{Mar 2016 - May 2016}{}{}
+\item Tools \& Environment : Matlab and IBM SPSS Modeler
+\item Use the clustering methods to do the customer segmentation for the pharmacy medical system customer.In the Recency-Frequency-Monetary(RFM) model, the customer have been divided into several parts and we provide explanations for each part of customers.
+\item According to the customer's consumption history, we predict the customer's repeated consumption with some supervised learning methods.
+\end{rSubsection}
+
+\end{rSection}
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience} \itemsep -2pt
+
+\begin{rSubsection}{Soochow University}{Mar 2017 - Jun 2017}{Teaching Assistant}{}
+\item Serve as the teaching assistant in the course of database system concepts.
+\end{rSubsection}
+
+\begin{rSubsection}{Soochow University}{Sep 2016 - Nov 2016}{Research Assistant}{}
+\item Work on a project called face recognition, which uses NAO robot to identify the human face and make a simple conversation.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages &  C/C++, Java(Proficient), Python \\
+Software \& Tools & Matlab, SQL Server, MySQL, IBM SPSS Modeler \\
+\end{tabular}
+\end{rSection}
+
+%	Publication SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+Yan Zhao, Jia Zhu, Wenyan Yang, et al. A Novel Hybrid Friends Recommendation Framework for Twitter[C]. International Asia Pacific Web Conference, 2017.
+
+\end{rSection}
+
+\end{document}
