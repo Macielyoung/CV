@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{CJKutf8}
+\usepackage{color}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+%\newcommand{\resumeSubSubItem}[1]{\item\small{\textbf{#1}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large 杨文彦(中共党员)}} & Email : \href{ywy940215@gmail.com}{ywy940215@gmail.com}\\
+   {\Large Wenyan Yang} & Call : 18896554955 \\
+\end{tabular*}
+
+ 
+
+%-----------EDUCATION-----------------
+\section{教育经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {苏州大学}{苏州}
+      {计算机科学与技术硕士;  导师: 郑凯}{2016.9 -- 2019.6}
+    \resumeSubheading
+      {苏州大学}{苏州}
+      {计算机科学与技术本科}{2012.9 -- 2016.6}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{实习经验}
+  \resumeSubHeadingListStart
+   \resumeSubheading
+    {叽里呱啦文化传播(上海)有限公司}{2018.11-至今}
+    {参与构建多轮对话项目。}{}
+    \resumeItemListStart
+        \resumeItem{对话构建:}{根据知识库内容生成多轮问答对话树结构。}
+        \resumeItem{回答处理:}{将用户回答语句执行归一化，纠错，指代消解等预处理，使分类器能够更好识别回答意图。}
+         \resumeItem{会话管理:}{在识别对话意图基础上判断对话逻辑，执行对话树状态转移。}
+          \resumeItem{会话生成:}{根据会话管理的状态结果，结合对应回答模板生成对应的回答。}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {微软亚洲工程院(苏州)}{2018.2-2018.8}
+      {爬取企业工商信息，构建金融知识图谱。}{}
+      \resumeItemListStart
+        \resumeItem{网络爬虫:}
+          {使用Python爬虫爬取企业工商信息，并和已有的新浪财经数据源信息进行融合，共约百万数据。}
+         \resumeItem{金融图谱:}{根据数据融合得到企业信息以及关系数据，写入neo4j数据库，构建金融知识图谱。}
+          \resumeItem{数据接口:}{制作特定数据接口，返回给前端人员展示金融图谱和企业信息。}
+      \resumeItemListEnd
+      {宝马公司销量业绩可视化实现。}
+      \resumeItemListStart
+        \resumeItem{数据可视化:}
+          {使用d3.js技术对宝马销量数据进行可视化展示，具有地图分区、缩放、拖动等功能。}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{项目经验}
+  \resumeSubHeadingListStart
+    \resumeSubItem{用户移动轨迹相似度建模:} 
+      {2017.9 - 2017.12\\  该项目基于用户的活动轨迹来挖掘用户的行为相似度。根据活动的时间分布将用户活动时间分段，然后使用轨迹嵌入的算法来挖掘活动轨迹的序列化性质，最后使用基于哈希的相似度方法计算用户之间的行为相似度。}
+    \resumeSubItem{掌药系统客户细分:}
+      {2016.2 - 2016.5\\ 使用聚类方法对掌药系统上的客户做客户细分。应用近度-频度-额度（RFM）模型，客户被划分到多个集群，同时对每个集群的客户消费行为提供解释。}
+  \resumeSubHeadingListEnd
+
+
+\section{活动经历}
+  \resumeSubHeadingListStart
+    \resumeSubItem{研究生第八团支部团支书:}
+    {2017.10-2019.6 \\ 帮助需要入党的同学申请入党，管理团支部"智慧团建"系统组织信息。}
+    \resumeSubItem{院研究生会实践部部长:}
+    {2016.10-2017.6 \\ 主持求职经验交流会，邀请几位求职成功的学长学姐分享求职经验。协助举办暖冬志愿服务活动，为残疾儿童送温暖。}
+  \resumeSubHeadingListEnd
+  
+\section{奖励荣誉}
+   \resumeSubHeadingListStart
+   \resumeSubItem{2018.9:}
+   {国家奖学金 \\ }
+   \resumeSubItem{2018.5:}
+   {优秀研究生干部 \\ }
+   \resumeSubItem{2017.5:}
+   {优秀研究生 \\ }
+   \resumeSubHeadingListEnd
+
+\section{论文发表}
+Wenyan Yang, Yan Zhao, Kai Zheng, et al. "Modeling Travel Behavior Similarity with Trajectory Embedding[M]. Database Systems for Advanced Applications, 2018.5." 
+
+\section{基本技能}%
+%--------PROGRAMMING SKILLS------------
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{编程语言}{: Python, C++, Java}
+     } 
+    \item{
+     \textbf{软件工具}{: Matlab, MySQL, Neo4J, SQL Server, IBM SPSS Modeler}
+    } 
+ \resumeSubHeadingListEnd
+
+%\section{自我评价}
+  %\resumeSubHeadingListStart
+  %\resumeSubItem{对于新技术新方法比较感兴趣，具备自我学习能力，互联网思维}
+  %{}
+  %\resumeSubItem{乐观积极，能够承担一定压力，善于与人沟通交流，有一定组织协调能力}
+  %{}
+  %\resumeSubItem{工作责任心强，做事稳重，逻辑思维好，具有较强的团队合作精神}
+  %{}
+  %\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{CJK*}
+\end{document}

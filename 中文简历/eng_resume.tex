@@ -1,0 +1,161 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{CJKutf8}
+\usepackage{color}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large 戴雨辰}} & Email : \href{mailto:233934081@qq.com}{xinghedyc@sjtu.edu.cn}\\
+   {\Large Dai Yuchen} & Call : 13122232993 \\
+\end{tabular*}
+
+\section{self introduction}
+ \resumeSubHeadingListStart
+Currently, I am a second-year post graduate. I mainly study detecting and recognizing text in different scenarios such as in natural images and in receipts. Besides, I also follow the progress of fundamental tasks in computer vision such as object detection and segmentation.
+
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shanghai Jiao Tong University}{Shanghai}
+      {Master of Computer Science;  GPA: 3.72/4}{2016.9 -- 2019.3}
+    \resumeSubheading
+      {Shanghai Jiao Tong University}{Shanghai}
+      {Bachelor of Information Security;  GPA: 3.54/4.3}{2012.9 -- 2016.6}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{challenges and competitions}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ICDAR 2015 incidental scene text detection}{}
+      {I reached rank 7th in the localization task (before September 11th).}{2017.9}
+      \resumeItemListStart
+        \resumeItem{Reference}
+          {Entry: CCFLAB\_FSTN in Online Leaderboard of ICDAR 2015 \href{http://rrc.cvc.uab.es/?ch=4&com=evaluation&task=1&gtv=1}{\color{blue}{Link}}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {ICDAR 2017 Robust Reading Challenge on COCO-Text}{}
+      {I reached the second-place (IoU 75\%) and the third-place (IoU 50\%) in localization task and 5th in recognition task }{2017.7}
+      \resumeItemListStart
+        \resumeItem{Reference}
+          {Entry: CCFLAB in the results of COCO-text \href{http://rrc.cvc.uab.es/?ch=5&com=evaluation&task=1}{\color{blue}{Link}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ICDAR 2017 Commpetition on Reading Chinese Text in the Wild}{}
+      {I reached 6th in localization task and third-place in end-end recognition task.}{2017.4}
+      \resumeItemListStart
+        \resumeItem{Reference}
+          {ICDAR2017 Competition on Reading Chinese Text in the Wild (RCTW-17) \href{https://arxiv.org/abs/1708.09585}{\color{blue}{Link}}}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{OCR related services}
+      {\\ In the past few months, I'm constructing OCR services for onlyou.com and Shanghai customs. I mainly build OCR services for different kinds of receipts and documents. Under these scenarios, the precision and recall of the OCR service significantly outperform the current OCR APIs provided in the market. A convolutional bidirectional-lstm followed by a CTC loss layer is used for text recognition part. demo code \href{https://github.com/xinghedyc/mxnet-cnn-lstm-ctc-ocr}{\color{blue}{Link}}}
+    \resumeSubItem{data platform building and user preference analysis}
+      {\\  In this project, I mainly used spark to aggregate each users' visited urls in huge amount of logs and then analyze their preference and properties which may be helpful for advertising.}
+
+  \resumeSubHeadingListEnd
+\section{paper}
+Dai, Yuchen, et al. "Fused Text Segmentation Networks for Multi-oriented Scene Text Detection." (2017). \href{https://arxiv.org/abs/1708.09585}{\color{blue}{[arxiv]}}
+\\In the paper, a novel framework is presented for multi-oriented scene text detection from an instance-aware segmentation perspective, and it is end-end trainable and effective which achieves state of the art performance in two common used benchmarks. 
+\section{skills}%
+%--------PROGRAMMING SKILLS------------
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: Python, C++}
+     }
+    \item{
+     \textbf{Technologies}{: Familiar with MXNet, and know about Tensorflow, Pytorch，Caffe}
+    }
+    \item{
+     \textbf{Algorithms}{: Familiar with common deep learning algorithms such as CNN、RNN, and typical and popular architectures in computer vision such as Faster RCNN、SSD、R-FCN、FCN、FCIS、Mask-RCNN、GAN.}
+    }  
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{CJK*}
+\end{document}
